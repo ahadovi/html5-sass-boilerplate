@@ -1,0 +1,27 @@
+{
+  "name": "web-frontend-starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "concurrently --names \"sass-watch,live-serve\" -c \"bgCyan,bgGreen\" \"npm run scss\" \"npm run serve\"",
+    "serve": "lite-server -c bs-config.json",
+    "scss": "node-sass --watch dist/assets/styles/ -o ./dist --source-map true"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "js",
+    "starter-template",
+    "web-devlopment",
+    "frontend devlopment"
+  ],
+  "author": "Abdul Ahad Ovi (https://github.com/ahadovi)",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.1"
+  }
+}
