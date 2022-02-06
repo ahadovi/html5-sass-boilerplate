@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently --names \"sass-watch,live-serve\" -c \"bgCyan,bgGreen\" \"npm run scss\" \"npm run serve\"",
     "serve": "lite-server -c bs-config.json",
-    "scss": "node-sass --watch dist/assets/styles/ -o ./dist --source-map true"
+    "scss": "node-sass --watch dist/assets/styles/ -o ./dist --source-map true",
+    "css:minify": "node-sass --watch dist/assets/styles/ -o ./dist --output-style compressed --source-map true"
   },
   "keywords": [
     "html",
